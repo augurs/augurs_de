@@ -1,0 +1,28 @@
+.service-section {
+  background: rgba(255, 255, 255, 0.13);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.service-section span svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff !important;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.service-tab {
+  color: #fff;
+  padding-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.service-tab h1 {
+  color: #fff;
+  padding-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}

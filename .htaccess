@@ -1,0 +1,127 @@
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    #RewriteBase /
+    # ensure www.
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ensure https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+    Redirect /careers/ /jobdetails-page.html
+    Redirect /careers /jobdetails-page.html
+    Redirect /blog /blog.html
+    Redirect /training/ /index.html
+	  Redirect /services/ /index.html
+	  Redirect /contact/ /contact.html
+	  Redirect /contact /contact.html
+    Redirect /de/ /index.html
+    Redirect /hk/ /index.html
+    Redirect /portfolio/ /index.html
+    Redirect /usa/ /index.html
+    Redirect /forum/ /index.html
+    Redirect /brand-concepts/ /digital_marketing-branding.html
+    Redirect /category/uncategorized/ /index.html
+    Redirect /case-studies/ /index.html
+    Redirect /pf/android/ /index.html
+	  Redirect /category/digital_marketing/ /digital_marketing-branding.html
+    Redirect /seo-marketing/ /digital_marketing-branding.html
+    Redirect /web-development/ /web-development.html
+    Redirect /bot-development/ /index.html
+    Redirect /mobileapps/ /app-development.html
+    Redirect /category/programming_tips/ /index.html
+    Redirect /tag/native/ /index.html
+    Redirect /tag/mobile/ /index.html
+    Redirect /mobile-app-development/ /app-development.html
+    Redirect /website-design-singapore/ /web-development.html
+    Redirect /pf/bot-development/ /index.html
+    Redirect /custom-api-development/ /index.html
+
+    Redirect /software-development-company-in-usa/ /software-development.html
+    Redirect /pf/real-estate/ /index.html
+    Redirect /pf/solutions-industry-wise/ /index.html
+    Redirect /2019/ /index.html
+    Redirect /pf/education-erp-software/ /index.html
+    Redirect /pf/trading-credentials/ /index.html
+    Redirect /pf/support-maintenance/ /index.html
+    Redirect /pf/sales-and-service-crm/ /index.html
+    Redirect /pf/salequick/ /case-study-details-salequick.html
+    Redirect /profile/pollobrall/ /index.html
+    Redirect /pf/trading-credentials/ /index.html
+    Redirect /pf/hospital-erp/ /hospital-product.html
+    Redirect /pf/trading-credentials/ /index.html
+    Redirect /pf/hellothreads/ /index.html
+    Redirect /pf/ios/ /index.html
+    Redirect /pf/nodejs-development-services/ /index.html
+    Redirect /pf/healthcare-website-app-development-services-india/ /index.html
+    Redirect /pf/architecture-project-2/ /index.html
+    Redirect /pf/travel-portal/ /index.html
+    Redirect /blog/ /index.html
+    Redirect /pf/teamup/ /index.html
+    Redirect /pf/opencart-development/ /index.html
+    Redirect /pf/food-mobile-app-development-services-india/ /index.html
+    Redirect /pf/healthcare-website-app-development-services-india/ /index.html
+    Redirect /activity/oberonlurge/ /index.html
+    Redirect /web-development/ /index.html
+    Redirect /pf/travel-portal/ /index.html
+    Redirect /pf/media-branding-promotions/ /index.html
+    Redirect /pf/custom-web-applications/ /index.html
+    Redirect /pf/best-bullion-jewelry-website-app-development-services-india/ /index.html
+    Redirect /high-demand-android-app-developer-skills-for-app-development/ /blog-detail8.html
+    Redirect /2017/12/ /index.html
+    Redirect /pf/content-management-solutions/ /index.html
+    Redirect /web-development-services-usa/ /web-development.html
+    Redirect /pf/finance-banking-web-and-apps-development-services-india/ /index.html
+    Redirect /category/miscellaneous/ /web-development.htm
+    Redirect /mobile-app-development-italy/ /app-development.html
+    Redirect /pf/ipad-application-development/ /index.html
+    Redirect /pf/ipad-application-development/ /index.html
+    Redirect /recent/ /index.html
+    Redirect /mobile-app-development-in-germany/ /app-development.html
+    Redirect /pf/zend-development-services/ /index.html
+    Redirect /pf/zend-development-services/ /index.html
+    Redirect /tag/hybrid/ /index.html
+    Redirect /ecommerce-web-development-company-usa/ /index.html
+    Redirect /pf/seo-internet-marketing/ /index.html
+    Redirect /pf/real-state-web-app-development-services-india/ /index.html
+    Redirect /pf/gps-vehicle-tracking-app-development-services-india/ /index.html
+    Redirect /au/ /index.html
+    Redirect /pf/mobileapps/ /index.html
+
+    Redirect /2018/ /index.html
+    Redirect /pf/ecommerce-application-development-company-india/ /index.html
+    Redirect /pf/windows-azure-development-services/ /index.html
+
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+	Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  <filesmatch "\.(html|htm)$">
+	Header set Cache-Control "max-age=7200, private, must-revalidate"
+  </filesmatch>
+  <filesmatch "\.(pdf)$">
+	Header set Cache-Control "max-age=86400, public"
+  </filesmatch>
+  <filesmatch "\.(js)$">
+	Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+</IfModule>

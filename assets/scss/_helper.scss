@@ -1,0 +1,82 @@
+.btn-purple{
+	border-color: $darkPurple;
+	background-color: $darkPurple;
+	color: $white;
+}
+.btn-round{
+	border-radius: 3.56187rem;
+}
+.xs-section {
+    padding: 20px 0 30px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px!important;
+}
+.rmt-30 {
+    margin-top: -30px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.0625rem;
+	line-height: 1.47;
+	font-weight: 700;
+}
+.mb-35{
+	margin-bottom: 35px;
+}
+.mb-15{
+	margin-bottom: 15px;
+}
+.mb-25{
+	margin-bottom: 15px;
+}
+
+.bullet-ul{
+	ul{
+		li{
+			list-style-type: circle;
+		}
+	}
+}
+.augurs{
+	color: #f37625;
+	font-weight: 600;
+}
+.page-seprator{
+	clear: both;
+	color: rgba(#fff, 0.8);
+	position: relative;
+	padding-left: 25px;
+	h1{
+		color: rgba(#fff, 0.9);
+		margin-bottom: 21px;
+		font-weight: 600;
+	}
+	small {
+	    font-size: 60%;
+	}
+	p{
+		padding:0;
+		max-width: 751px;
+	}
+	>*{
+		text-align: left;
+	}
+	&::before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.85;
+		width: 2px;
+		height: 100%;
+		content: "";
+		background: linear-gradient(-19deg, #3680ff 5%,#dc3545 100%);
+		box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.15);
+	}
+}

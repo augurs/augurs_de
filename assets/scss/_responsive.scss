@@ -1,0 +1,390 @@
+
+
+
+@media only screen and(max-width: 768px){
+    html{
+       
+        // .reset-btn{
+        //     &.show{
+        //         ~ .product.
+        //     }
+        // }
+        .product-content{
+            .col-md-4{
+                top: 0 !important;
+            }
+        }
+        .portfolio-wrapper{
+            // .media-tip{
+            //     right: calc(50%);
+            // }
+            .portfolio-media{
+                max-width: 100%;
+            }
+            
+        }
+
+        .technology  {
+            .tech-name{
+                text-align: center;
+            }
+        }
+
+        //techhouse
+        .techhouse{
+            .col-6{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        //Blog sections
+        .main-blog-section{
+            .blog-img{
+                margin-bottom: 30px;
+            }
+        }
+        .subscribe{
+            background: linear-gradient(to bottom,#3680ff 42.45%,#dc3545 64.45%);
+            padding: 20px 0;
+            .col-sm-8,.col-sm-4{
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+            .subscribe__left_inner {
+                max-width: 100%;
+                text-align: center;
+                width: 70%;
+                margin: 0 auto;
+                .subscribing_form{
+                    &.d-flex{
+                        flex-direction: column;
+                      
+                      &:not(.active){
+                        min-height: 170px;
+                        margin-bottom: 20px;
+                        > .d-flex{
+                            &.flex-column{
+                                 &.mr-2{
+                                     margin-right: 0px !important;
+                                 }
+                                 .g-recaptcha{
+                                     margin-top: -45px;
+                                 }
+                                 button{
+                                     position: relative;
+                                     top: 90px;
+                                 }
+                            }
+                        }
+                      }
+                    }
+
+                }
+            }
+        }
+        .servicemodal{
+            .modal-dialog {
+                width: 90%;
+                margin: 1% auto;
+                max-width: 90%;
+                height: auto;
+                .modal-content{
+                    .crcle{
+                        width: 40px;
+                        height: 40px;
+                        top: -15px!important;
+                        right: -12px!important;
+                        button{
+                            right: 13px;
+                            top: 8px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .services-modal-data {
+                ul{
+                    li{
+    
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+        //Contact
+        .contact-form{
+            height:  auto;
+            .inner{
+                height:  auto;
+                .panel {
+                    width: 100%;
+                    float: none;
+                    min-height: 200px;
+                    max-height: 200px;
+                    &.panel-right{
+                        margin-left: 0;
+                        margin-right: 0;
+                        transform: skew(0deg);
+                        max-height: 100% !important;
+                        .panel-content{
+                            position: static;
+                            transform: skew(0deg);
+                            height: auto;
+                            .form{
+                                transform: translate(0);
+                                width: 80%;
+                                position: static;
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                    &.panel-left{
+                        margin-left: 0;
+                        display: block;
+                       
+                    }
+                }
+
+            }
+        }
+        //footer
+        .footer-cpy{
+            .row{
+                flex-direction: column;
+                .col-sm-6{
+                    flex: 0 0 10%;
+                    max-width: 100%;
+                }
+                .cpy__txt{
+                    text-align: center;
+                    line-height: 30px;
+
+                }
+                .cpy__social{
+                    text-align: center;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                    
+                }
+                .col-sm-6{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1024px){
+    html{
+        .product{
+            height: 50vh;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+            &.view{
+                height: 100vh;
+                ~ .services{
+                    height: 0vh;
+                }
+            }
+            .product-title{
+                text-align: center;
+                right: auto;
+                max-width: 100%;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .name{
+                    font-size: 40px;
+                }
+                .pd__txt{
+                    font-size: 30%;
+                    ul.d-flex {
+                        padding-left: 0px !important;
+                        li{
+                            margin-left: 30px !important;
+                        }
+                    }
+                }
+                .more__btn{
+                    float: none;
+                    margin-right: 0;
+                }
+             
+            }
+            .animate-first{
+                // display: none;
+                font-size: 130%;
+                line-height: 130%;
+            }
+            .animate-second{
+                // display: none;
+                font-size: 120%;
+                line-height: 120%;
+            }
+        }
+        .services{
+            margin-top: 0;
+            height: 50vh;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+            &.view{
+                height: 100vh;
+                ~ .product{
+                    height: 0vh;
+                }
+            }
+            .animate-first{
+                // display: none;
+                font-size: 130%;
+                line-height: 130%;
+            }
+            .animate-second{
+                // display: none;
+                font-size: 120%;
+                line-height: 120%;
+            }
+            .services-title{
+                text-align: center;
+                left: auto;
+                max-width: 100%;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .name{
+                    font-size: 40px;
+                }
+                .pd__txt{
+                    font-size: 30%;
+                    ul.d-flex {
+                        padding-left: 0px !important;
+                        li{
+                            margin-left: 30px !important;
+                        }
+                    }
+
+                }
+           
+            }
+            
+            // @extend .product;
+        }
+ 
+        .mouse-down{
+            display: none;
+            pointer-events: none;
+            opacity: 0;
+        }
+        .logo-container.show-logo{
+            display: none !important;
+            pointer-events: none;
+            opacity: 0;
+            ~ .product{
+                &:not(.view){
+                    height: 0vh !important;
+                }
+            }
+            // @extend .mouse-down;
+        }
+        .modal{
+          
+            &.cs-modal{
+                .modal-dialog{
+                    width: 90% !important;
+                    margin: 0 auto;
+                    padding: 0px !important;
+                }
+            }
+        }
+        //
+        .services-wrapper, .services1{
+            .row{
+                .col-md-4.col-sm-4 {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .subscribe{
+            .container{
+                max-width: 100%;
+            }
+            
+        }  
+        
+    }
+
+}
+
+@media only screen and(max-width: 1024px) and (min-width: 768px) {
+    .modal{
+        &.servicemodal{
+            .services-modal-data{
+                ul{
+                    &.nav{
+                        li{
+                            flex: 1 !important;
+                            max-width: 100% !important;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .contact-content{
+        .contact-form{
+            .panel{
+                &.panel-left{
+                    width: 40% !important;
+                }
+                &.panel-right{
+                    width: 80% !important;
+                }
+            }
+        }
+    } 
+
+}
+
+
+//animated sbox
+
+@media only screen and (max-width: 1130px) and (min-width: 1025px) {
+    html{
+        .product{
+            .product-title{
+                right: 15%;
+             
+            }
+           
+        }
+        .services{
+      
+            .services-title{
+                left: 10%;
+            }
+            
+            // @extend .product;
+        }
+
+     
+    }
+}
+
+@media only screen and (max-width: 1330px) and (min-width: 1131px) {
+    html{
+        .product{
+            .product-title{
+                right: 25%;
+            }
+        }
+        .services{
+            .services-title{
+                left: 20%;
+            }
+        }
+
+     
+    }
+}

@@ -1,0 +1,52 @@
+.reset-btn{
+    position: absolute;
+    right: 30px;
+    top: -100px;
+    z-index: 9;
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease-in-out .3s;
+    pointer-events: none;
+    
+    > .btn{
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        border: none;
+        box-shadow: $boxShadow;
+        background:linear-gradient(-19deg,rgba(220, 53, 69, 0.69) 5%,rgba(54, 128, 255, 0.7686274509803922) 100%);
+    }
+    &.show{
+        
+        animation: float 1s ease-in-out 1s 1 normal both;
+    }
+    
+}
+.btn-second {
+    background: transparent;
+    border: 1px solid rgba(221, 221, 221, 0.62);
+    color: rgba(255, 255, 255, 0.62);
+    &.btn{
+        box-shadow:1px 0px 1px #c1c1c1cf;
+    }
+    &:hover,&:focus{
+        background: #dc3545;
+        color: rgba(255, 255, 255, 0.95);
+        border-color: #dc3545;
+    }
+}
+@keyframes float{
+    from{
+        top: 0;      
+    }
+    to{
+        top: 30px;
+        opacity: 1;
+        transform: scale(1);
+        pointer-events:visible;
+    }
+}

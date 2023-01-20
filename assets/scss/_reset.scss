@@ -1,0 +1,16 @@
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.danger-btn{
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	svg{
+		fill: currentColor;
+	}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> body{display:flex;justify-content: center;align-items: center;min-height: 100vh;margin:0;}* {box-sizing: border-box;} body{background-color: #000; } .img-comp-container {min-width: 551px;position: relative; height: 200px;  } .img-comp-img {position: absolute; width: 0; height: auto; overflow:hidden; } .img-comp-img img {display:block; vertical-align:middle; } 
+	.img-comp-overlay{
+		width: 0;
+  		-webkit-animation: widthMove 0.8s cubic-bezier(0.6, 0.56, 0.15, 0.99) infinite alternate;
+  		animation: widthMove 0.8s cubic-bezier(0.6, 0.56, 0.15, 0.99) infinite alternate;
+	}
+@-webkit-keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+@-moz-keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+@keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+</style>
+</head>
+<body>
+<div class="img-comp-container">
+<div class="img-comp-img img-comp-overlay">
+<img src="img/logo-w.png" width="551" height="178">
+</div>
+</div>
+<script src="//code.tidio.co/ushigqopw0jzdtuodnzsyo7zxfqy5ij0.js" async></script>
+</body>
+
+
+</html>

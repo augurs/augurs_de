@@ -1,0 +1,242 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0; }
+
+.page-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 100vh; }
+  .page-loader .page-loader-inner {
+    max-width: 321px;
+    width: 100%;
+    position: relative; }
+    .page-loader .page-loader-inner svg {
+      max-width: 100%;
+      width: 100%;
+      height: auto; }
+    .page-loader .page-loader-inner::after {
+      position: absolute;
+      content: "";
+      background: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      opacity: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      -webkit-animation: scale-back1 1.5s ease-in-out 4s infinite alternate;
+      animation: scale-back1 1.5s ease-in-out 4s infinite alternate;
+      -webkit-filter: blur(150px);
+      filter: blur(150px);
+      z-index: -1; }
+    .page-loader .page-loader-inner::before {
+      position: absolute;
+      content: "";
+      opacity: 0;
+      background: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      height: 100%;
+      -webkit-animation: scale-back2 1.5s ease-in-out 4s infinite alternate;
+      animation: scale-back2 1.5s ease-in-out 4s infinite alternate;
+      top: 0;
+      left: 0;
+      -webkit-filter: blur(150px);
+      filter: blur(150px);
+      z-index: -1; }
+  .page-loader path {
+    fill: #000;
+    stroke-width: 3;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    stroke: #fff;
+    -webkit-animation: dash 5s linear alternate 1 forwards;
+    animation: dash 5s linear alternate 1 forwards; }
+    .page-loader path.colored-path {
+      fill: #000;
+      stroke: #F3721F;
+      -webkit-animation: dashColored 5s linear alternate 1 forwards;
+      animation: dashColored 5s linear alternate 1 forwards; }
+    .page-loader path.underline {
+      -webkit-animation: dashLine 5s linear alternate 1 forwards;
+      animation: dashLine 5s linear alternate 1 forwards;
+      stroke-dasharray: 1507;
+      stroke-dashoffset: 1507; }
+
+@-webkit-keyframes dashColored {
+  0% {
+    stroke-dashoffset: 400;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 50;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #F3721F;
+    stroke: #F3721F; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #F3721F;
+    stroke: transparent; } }
+
+@keyframes dashColored {
+  0% {
+    stroke-dashoffset: 400;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 50;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #F3721F;
+    stroke: #F3721F; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #F3721F;
+    stroke: transparent; } }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 400;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 50;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: #fff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: transparent; } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 400;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 50;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: #fff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: transparent; } }
+
+@-webkit-keyframes dashLine {
+  0% {
+    stroke-dashoffset: 1507;
+    fill: #000; }
+  20% {
+    stroke-dashoffset: 1200;
+    fill: #000; }
+  40% {
+    stroke-dashoffset: 1000;
+    fill: #000; }
+  60% {
+    stroke-dashoffset: 800;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 300;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: #fff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: transparent; } }
+
+@keyframes dashLine {
+  0% {
+    stroke-dashoffset: 1507;
+    fill: #000; }
+  20% {
+    stroke-dashoffset: 1200;
+    fill: #000; }
+  40% {
+    stroke-dashoffset: 1000;
+    fill: #000; }
+  60% {
+    stroke-dashoffset: 800;
+    fill: #000; }
+  80% {
+    stroke-dashoffset: 300;
+    fill: #000; }
+  85% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: #fff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+    stroke: transparent; } }
+
+@-webkit-keyframes scale-back1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  15% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-back1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  15% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes scale-back2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  15% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-back2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  15% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

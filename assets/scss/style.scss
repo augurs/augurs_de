@@ -1,0 +1,104 @@
+@import './fonts';
+@import './variable';
+@import './resetBtn';
+@import './reset';
+@import './landing';
+@import './helper';
+@import './section';
+@import './products';
+@import './mouse-down';
+@import './product-details';
+@import './contact';
+@import './footer';
+@import './header';
+@import './about';
+@import './newAbout';
+@import './social-icons';
+@import './product-service';
+@import './blog';
+@import './modal';
+@import './partner';
+@import './404';
+@import './employee-profile';
+@import './faq';
+@import './job';
+@import './case-study';
+@import './side-modal';
+@import './howWork';
+@import './responsive';
+@import './loader';
+
+
+.top-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.drag-signature{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    svg {
+      width: 100px;
+      height: 100px; 
+      margin: 0 auto;
+      .draw-arrow {  
+        stroke-width: 5;
+        stroke: #7265bc; 
+        fill: none;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400; 
+        animation-duration: 2.0s;
+        animation-fill-mode: forwards;
+        animation-name: draw;
+        &.tail-1 {
+          animation-delay: .5s;
+        }
+        &.tail-2 {
+          animation-delay: .7s;
+        }
+      }
+    }
+    &.mouse-over{
+        opacity: 1;
+        // svg {
+        //     width: 100px;
+        //     height: 100px; 
+        //     margin: 0 auto;
+        //     .draw-arrow {  
+        //       stroke-width: 5;
+        //       stroke: #7265bc; 
+        //       fill: none;
+        //       stroke-dasharray: 400;
+        //       stroke-dashoffset: 400; 
+        //       animation-duration: 2.0s;
+        //       animation-fill-mode: forwards;
+        //       animation-name: draw;
+        //       &.tail-1 {
+        //         animation-delay: .5s;
+        //       }
+        //       &.tail-2 {
+        //         animation-delay: .7s;
+        //       }
+        //     }
+        //   }
+    }
+    
+}
+  @keyframes draw {
+   to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  #myform{
+    input{
+       margin-bottom: 20px !important;
+    }
+
+  }

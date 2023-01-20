@@ -1,0 +1,26 @@
+"Comments"	"Category"	"Name"	"Company"	"Email"	"Datum"	"Uhrzeit"	"Name des Remote-Computers"	"Benutzername"	"Browser-Typ"
+"Hallo, 
+
+Euro Hompage finde ich klasse. Was ich nicht so toll finde, ist, dass es die 501 in 38'er Laenge nur in dunkel blau erhaeltlich ist, stimmt das ?
+Ich habe gehoert, dass in Holland auch andere Farben kaeuflich sind, stimmt das ebenfalls ?
+
+MFG,
+Thomas Detert"	"Website"	"Thomas Detert"	""	"detert@alpha.fh-furtwangen.de"	"07 Sep 1999"	"12:39:03"	"62.104.198.10"		"Mozilla/4.51 [de] (Win98; I)"
+"Hi, also eure site ist ja nciht schlecht
+nur was ich absolut vermisse ist bei dem DIESEL emblem der besagte DIESEL kopf. 
+ich suche schon lange diesen besagten kopf. könntet ihr mir eine mail oder so schreiben, so ich den bekommen kann ?
+
+es wäre echt stark von euch - thx."	"Website"	"Michael Schulz"	""	"MS_Michael.Schulz@t-online.de"	"25 Sep 1999"	"13:41:39"	"62.157.85.176"		"Mozilla/4.08 [en] (Win98; I)"
+"Bin seit ein paar std. im netz...
+Ich suche nämlich Diesel Jeans.
+Auf ihre seite wurde ich fündig was mir aber fehlt ist die übersicht...also ich kann nicht sehen was ich kaufe!!
+Es ist wörklich eine gute seite(werde ich empfehlen) aber was das angeht was ich oben erwähnt habe wurde ich mir an ihre stelle gedanken machen...ein bild je produkt wurde ausreichen
+
+Grüsse aus Dillingen a.d. Donau"	"Produkte"	"V"	""	""	"25 Sep 1999"	"13:54:13"	"62.96.151.44"		"Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)"
+"Bin seit ein paar std. im netz...
+Ich suche nämlich Diesel Jeans.
+Auf ihre seite wurde ich fündig was mir aber fehlt ist die übersicht...also ich kann nicht sehen was ich kaufe!!
+Es ist wörklich eine gute seite(werde ich empfehlen) aber was das angeht was ich oben erwähnt habe wurde ich mir an ihre stelle gedanken machen...ein bild je produkt wurde ausreichen
+
+Grüsse aus Dillingen a.d. Donau"	"Produkte"	"Valdet Beqiraj"	"Privat"	"Valdet.B@arcormail.de"	"25 Sep 1999"	"13:54:38"	"62.96.151.44"		"Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)"
+""	"Produkte"	"Sonderpreismärkte Seifert"	"Einzelhandel"	"hasei@eyeonline.de"	"14 Oct 1999"	"11:22:48"	"212.185.252.3"		"Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; CompuServe Deutschland IE50)"

@@ -1,0 +1,45 @@
+.case-study{
+    .about-page{
+        margin-left: 0;
+        margin-right: 55px;
+        text-align: right;
+        box-shadow: 28px 0px 31px -33px #9e9e9e;
+        .case-study-ribbon{
+            right: -55px;
+            box-shadow: 0.22em 0.22em 0.28em #a7a7a7;
+            &::before{
+                left: auto;
+                right: -18px;
+                border-right-color: transparent;
+                border-left: 1.31em solid
+            }
+        }
+    }
+    &.grey-bg{
+        background: #f2f2f2;
+        .card{
+            // margin-bottom: 5rem;
+            .card-head{
+                img{
+                    height: 150px;
+                }
+            }
+            .circle{
+                position: absolute;
+                width: 64px;
+                height:64px;
+                border-radius: 50%;
+                top: -32px;
+                right: calc(50% - 32px);
+                padding: 0px;
+                filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.38));
+                img{
+                    width: 64px;
+                    height:64px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

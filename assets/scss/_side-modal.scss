@@ -1,0 +1,58 @@
+.slick-arrow {
+	&:focus {
+		outline: none;
+	}
+}
+.slick-active {
+	opacity: 1;
+}
+.modal-dialog {
+	.modal-content {
+		height: 100%;
+	}
+}
+#exampleModal1 {
+	padding: 0px !important;
+}
+.modal-dialog-slideout {
+	min-height: 100%;
+	margin: 0 0 0 auto;
+	background: #fff;
+	.modal-content {
+		border: 0;
+		border-radius: 0px;
+		padding: 20px;
+		background: linear-gradient(-19deg, #dc3545 5%, #3680ff 100%);
+	}
+	.modal-header {
+		height: 69px;
+		display: block;
+		h5 {
+			float: left;
+		}
+	}
+	.modal-footer {
+		height: 69px;
+		display: block;
+	}
+}
+.modal.fade {
+	.modal-dialog.modal-dialog-slideout {
+		-webkit-transform: translate(100%, 0)scale(1);
+		transform: translate(100%, 0)scale(1);
+	}
+}
+.modal.fade.show {
+	.modal-dialog.modal-dialog-slideout {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+		display: flex;
+		align-items: stretch;
+		-webkit-box-align: stretch;
+		height: 100%;
+		.modal-body {
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+	}
+}

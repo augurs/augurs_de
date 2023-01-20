@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> body{display:flex;justify-content: center;align-items: center;min-height: 100vh;margin:0;}* {box-sizing: border-box;} body{background-color: #000; } .img-comp-container {min-width: 451px;position: relative; height: 149px;  } .img-comp-img {position: absolute; width: 0; height: auto; overflow:hidden; } .img-comp-img img {display:block; vertical-align:middle; } 
+  .img-comp-overlay{
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.6, 0.56, 0.15, 0.99);
+  }
+.img-comp-overlay.lcircle{
+    width: 100%;
+    transition: transform 0.3s cubic-bezier(0.6, 0.56, 0.15, 0.99) 0s,left 0.3s cubic-bezier(0.6, 0.56, 0.15, 0.99) 0.3s;
+    opacity: 1;
+    left: 35.5%;
+    transform: scale(0);
+    transform-origin: 14.5% 50%;
+}
+.img-comp-overlay.laugurs{
+    -webkit-transition-delay: 0.6s ;
+    -moz-transition-delay: 0.6s ;
+    transition-delay: 0.6s ;
+    width: 0%;
+}
+.img-comp-overlay.lline{
+    -webkit-transition-delay: 0.3s ;
+    -moz-transition-delay: 0.3s ;
+    transition-delay: 0.3s ;
+    width: 0%;
+}
+.img-comp-overlay.lcando{
+    -webkit-transition-delay: 0s ;
+    -moz-transition-delay: 0s ;
+    transition-delay: 0s ;
+    width: 0%;
+  }
+.load >.img-comp-overlay.lcircle{
+    transition: transform 0.3s cubic-bezier(0.6, 0.56, 0.15, 0.99) 0s,left 0.3s cubic-bezier(0.6, 0.56, 0.15, 0.99) 0.3s;
+    width: 100%;
+    transform: scale(1);
+    opacity: 1;
+    left: 0;
+}
+.load >.img-comp-overlay.laugurs{
+    -webkit-transition-delay: 0.3s ;
+    -moz-transition-delay: 0.3s ;
+    transition-delay: 0.3s ;
+    width: 100%;
+
+}
+.load >.img-comp-overlay.lline{
+    -webkit-transition-delay: 0.6s ;
+    -moz-transition-delay: 0.6s ;
+    transition-delay: 0.6s ;
+    width: 100%;
+}
+.load >.img-comp-overlay.lcando{
+    -webkit-transition-delay: 0.9s ;
+    -moz-transition-delay: 0.9s ;
+    transition-delay: 0.9s ;
+    width: 100%;
+  }
+.load.infinite >.img-comp-overlay.lcando{
+  transition: all 0.1s cubic-bezier(0.21, 1.06, 0.46, 0.85) 0s;
+  width: 0;
+}
+.load.infinite.active >.img-comp-overlay.lcando{
+  width: 100%;
+}
+.img-comp-overlay.lfull{
+  opacity: 0
+}
+@-webkit-keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+@-moz-keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+@keyframes widthMove {
+  from {width: 0%;}
+  to {width: 105%;}
+}
+</style>
+</head>
+<body>
+  <div id="comp-container" class="img-comp-container infinite">
+    <div class="img-comp-img img-comp-overlay lcircle">
+      <img src="img/circle.png" width="451" height="149">
+    </div>
+    <div class="img-comp-img img-comp-overlay laugurs">
+      <img src="img/augurs.png" width="451" height="149">
+    </div>
+    <div class="img-comp-img img-comp-overlay lline">
+      <img src="img/line.png" width="451" height="149">
+    </div>
+    <div class="img-comp-img img-comp-overlay lcando">
+      <img src="img/cando.png" width="451" height="149">
+    </div>
+    <div class="img-comp-img img-comp-overlay lfull">
+      <img src="img/logo-w.png" width="451" height="149">
+    </div>
+  </div>
+<script type="text/javascript">
+  setTimeout(function(){
+    document.getElementById('comp-container').classList.add('load');
+    startLoop(1500);
+  },10)
+  function startLoop(setinterval){
+    document.getElementById('comp-container').classList.add('infinite');
+    setInterval(function(){
+     document.getElementById('comp-container').classList.toggle('active');
+    },setinterval)
+  }
+</script>
+<script src="//code.tidio.co/ushigqopw0jzdtuodnzsyo7zxfqy5ij0.js" async></script>
+</body>
+
+
+</html>

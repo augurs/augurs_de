@@ -1,0 +1,37 @@
+.faq{
+    position: relative;
+    // background-color: #f2f2f2;
+    .faq-title{
+        padding: 50px 0;
+        text-align: center;
+        background: linear-gradient(-19deg, #dc3545 5%, #3680ff 100%, #fdbb2d 100%);
+        color: $white;
+        z-index: 1;
+
+        .divider {
+            margin-bottom: -51px;
+            width: 100%;
+            z-index: 1;
+            .top_sep_svg{
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                path{
+                    fill: transparent;
+                }
+    
+            }
+            svg:not(.top_sep_svg){
+                fill: #fff;
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+    .faq-content{
+        padding: 50px 0;
+        padding-top: 50px;
+        // margin-top: -50px;
+        z-index: 0;
+    }
+}

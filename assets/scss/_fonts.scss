@@ -1,0 +1,42 @@
+
+
+
+@font-face{
+	font-family: 'Addington-CF';
+	src: url("../fonts/Addington-CF/AddingtonCF-Bold.ttf");
+	src: url("../fonts/Addington-CF/AddingtonCF-Bold.otf") format("opentype");
+
+}
+@font-face{
+	font-family: 'Open Sans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	// src: url("../fonts/Addington-CF/AddingtonCF-Bold.otf") format("opentype");
+
+}
+@font-face{
+	font-family: 'Poppins';
+	src: url("../fonts/Poppins/Poppins-Regular.ttf");
+	// src: url("../fonts/Addington-CF/AddingtonCF-Bold.otf") format("opentype");
+
+}
+
+$fontfamily: 'Open Sans', sans-serif;
+$fontfamily2: AddingtonCF-ExtraBold;
+$fontfamily3: 'Poppins', sans-serif;
+
+p{
+	font-family: $fontfamily !important;line-height: 27px;
+}
+.h12,h3{
+	font-family: $fontfamily3 !important;
+}
+h3 {
+
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4;
+    margin-bottom: 33px;
+    text-align: center;
+
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/slick/slick.css" />
+	<link rel="stylesheet" href="./assets/css/custom.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<title>Augurs Technologies | Über uns | Unternehmen für Software, Künstliche Intelligenz und Datenwissenschaft, India, USA, Germany, HongKong</title>	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117330459-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117330459-1');
+</script>
+</head>
+
+<body class="how_work">
+	
+	<!-- header -->
+	<iframe class="partial_iframe" src="partial/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+	<section class="header-seprator ">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="page-seprator">
+						<h1>IMPRESSUM </h1>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"> 
+			<svg class="top_sep_svg" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" style="margin-bottom: -100px;  ">
+				<defs>
+					<linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" style="stop-color:#3680ff;stop-opacity:1;"></stop>
+						<stop offset="100%" style="stop-color:#dc3545;stop-opacity:1;"></stop>
+					</linearGradient>
+				</defs>
+				<path fill="url(#bg-gradient)" d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100">
+				</path>
+			</svg> 
+			<svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg">
+				<path fill="#fff" d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100">
+				</path>
+			</svg> 
+		</div>
+	</section>
+	<section class="sec_style">		
+		<div class="container">
+			<div class="row">
+				<div class="col-12">					
+					<p>
+						Augurs Technologies Germany GmbH
+						<br/>Kaiser-Joseph-Str. 245
+						<br/>79098 Freiburg
+						<br/><br/>
+						Tel. 0761/76646995
+						<br/>
+						Email: info@augurs.de
+						<br/>
+						Geschäftsführer: Andreas Wolf<br/>
+						Registergericht: Amtsgericht München<br/>
+						Registernummer: HRB 265095
+						</p>
+				</div>	
+				
+			</div>
+		</div>
+	</section>
+	 
+	<!-- footer -->
+	<iframe class="partial_iframe" src="partial/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-migrate-3.1.0.js"></script> 
+	<!-- <script type="text/javascript" src="assets/js/webslidemenu.js"></script>  -->
+	<script src="assets/slick/slick.js"></script> 
+	<script src="assets/js//popper.min.js"></script> 
+	<script src="assets/js/bootstrap.min.js"></script> 
+
+	<script src="assets/js/index.js"></script>
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+            $('#myform').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'post',
+                    url: 'form_submit.php',
+                    data: $('#myform').serialize(),
+                    success: function (data) {
+                        alert(data);
+                        $("#myform")[0].reset();
+                    }
+                });
+            });
+			$('.center').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 3,
+				responsive: [
+
+					{
+						breakpoint: 1200,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+
+			$('.slick-slide').click(function () {
+				$("#exampleModal1").modal('show');
+
+			});
+		});
+
+	</script>
+<script src="//code.tidio.co/ushigqopw0jzdtuodnzsyo7zxfqy5ij0.js" async></script>
+</body>
+
+
+
+</html>

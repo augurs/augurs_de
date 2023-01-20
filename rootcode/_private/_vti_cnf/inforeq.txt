@@ -1,0 +1,9 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|Stening
+vti_timecreated:TR|18 Dec 1998 20:11:49 -0000
+vti_modifiedby:SR|awolf
+vti_backlinkinfo:VX|feedback.htm
+vti_nexttolasttimemodified:TR|25 Sep 1999 13:54:38 -0700
+vti_extenderversion:SR|3.0.2.1330
+vti_nosourcecontrol:SR|True
+vti_timelastmodified:TR|14 Oct 1999 11:22:48 -0700

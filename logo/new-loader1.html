@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/augurs.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+body {
+  background-color: black;
+  font-family: cursive;
+  margin:0;
+  padding: 0;
+}
+.page-loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.augurs-can {
+    font-size: 65px;
+    position: relative;
+    padding: 13px 0 5px;
+}
+.augurs-can::after {
+     position: absolute;
+    content: '';
+    left: 30px;
+    top: -25px;
+    width: 3px;
+    height: 80px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: starAfter;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.augurs-can::before {
+  position: absolute;
+  content: '';
+  left: -5px;
+  top: 15px;
+  width: 80px;
+  height: 3px;
+  background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+  z-index: 4;
+  -webkit-animation-name: startBefore;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes startBefore {
+  0%,5% {
+    left: -5px;
+    top: 15px;
+    opacity:0;}
+  11%,20% {
+    left: -5px;
+    top: 15px;
+    opacity:1;}
+  25% {
+    left: -5px;
+    top: 15px;
+    opacity:0;}
+  
+  26%,31% {
+    left: 33.33%;
+    top: 72px;
+    opacity: 0;}
+  36%,45% {
+    left: 33.33%;
+    top: 72px;
+    opacity: 1;}
+  50% {
+    left: 33.33%;
+    top: 72px;
+    opacity: 0;}
+  
+  51%,56% {
+    left: 66.66%;
+    top: 15px;
+    opacity: 0;}
+  61%,70% {
+    left: 66.66%;
+    top: 15px;
+    opacity: 1;}
+  75% {
+    left: 66.66%;
+    top: 15px;
+    opacity: 0;}
+  
+  76%,81% {
+    left: calc(100% - 50px);
+    top: 72px;
+    opacity: 0;}
+  86%,95% {
+    left: calc(100% - 50px);
+    top: 72px;
+    opacity: 1;}
+  100% {
+    left: calc(100% - 50px);
+    top: 72px;
+    opacity: 0;}
+   
+ 
+}
+@-webkit-keyframes starAfter {
+  0%,5% {
+    left: 30px;
+    top: -25px;
+    opacity: 0;}
+
+  11%,20% {
+    left: 30px;
+    top: -25px;
+    opacity: 1;}
+  25% {
+    left: 30px;
+    top: -25px;
+    opacity: 0;}
+
+  26%,31% {
+    left: calc(33.33% + 40px);
+    top: 32px;
+    opacity: 0;}
+  36%,45% {
+    left: calc(33.33% + 40px);
+    top: 32px;
+    opacity: 1;}
+  50% {
+    left: calc(33.33% + 40px);
+    top: 32px;
+    opacity: 0;}
+
+  51%,56% {
+    left: calc(66.66% + 40px);
+    top: -25px;
+    opacity: 0;}
+  61%,70% {
+    left: calc(66.66% + 40px);
+    top: -25px;
+    opacity: 1;}
+  75% {
+    left: calc(66.66% + 40px);
+    top: -25px;
+    opacity: 0;}
+
+  76%,81% {
+    left: calc(100% - 15px);
+    top: 32px;
+    opacity: 0;}  
+  86%,95% {
+    left: calc(100% - 15px);
+    top: 32px;
+    opacity: 1;}
+  100% {
+    left: calc(100% - 15px);
+    top: 32px;
+    opacity: 0;}
+}
+.cd-space{
+  padding: 0 6px;
+}
+.augurs-can >span{
+display: block;
+    clear: both;
+}
+.augurs span {
+    float: left;
+    display: block;
+}
+.augurs span:not(:first-child) {
+  margin-left: -15px;
+}
+.augurs span.ags-s {
+  margin-left: -21px;
+}
+.cando> span {
+    margin-left: -4px;
+}
+.augurs-can >span:nth-child(2) {
+  height: 3.5px;
+    border-radius: 90px;
+    background-color: #fff;
+    margin: 5px 0;
+
+    width: calc(100% - 10px);
+    float: left;
+  }
+.ags-circle {
+    font-size: 121px;
+}
+.augurs-can >span:last-child {
+    font-size: 16px;
+    text-align: right;
+    width: calc(100% - 10px);
+}
+.glow {
+    display: flex;
+    position: relative;
+    font-size: 80px;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.glow:before {  
+    content: '';
+    position: absolute;
+    left: -75%;
+    width: 250%;
+    height: 250%;
+    top: -35%;
+    opacity: 0;
+    z-index: 10;
+    background: radial-gradient(transparent 0%, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%, transparent 100%);
+    transform: scale(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.glow.active:before { 
+    -webkit-animation: glowAfter 0.8s ease-in-out 0.8s infinite;
+    animation: glowAfter 0.8s ease-in-out 0.8s infinite;
+ }
+
+@-webkit-keyframes glowAfter {
+  0% {opacity: 0;
+    transform: scale(0.6);}
+  50% {opacity: 1;
+    transform: scale(1);}
+  100% {opacity: 0;
+    transform: scale(1.2);}
+}
+@keyframes glowAfter {
+  0% {opacity: 0;
+    transform: scale(0.6);}
+  50% {opacity: 1;
+    transform: scale(1);}
+  100% {opacity: 0;
+    transform: scale(1.2);}
+}
+
+@keyframes blinkLetter {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 10px rgba(252, 247, 245, 0.71), 0 0 10px #fff, 0 0 15px #fff;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 10px rgba(252, 247, 245, 0.71), 0 0 10px #fff, 0 0 15px #fff;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="page-loader">
+  <div class="glow active">
+    <span class="ags-circle"></span>
+    <span class="augurs-can">
+      <span class="augurs">
+        <span class="ags-a"></span>
+        <span class="ags-u"></span>
+        <span class="ags-g"></span>
+        <span class="ags-u"></span>
+        <span class="ags-r"></span>
+        <span class="ags-s"></span>
+      </span>
+      <span class="sep-line"></span>
+      <span class="cando">
+        <span class="ags-dot"></span>
+        <span class="ags-dot"></span>
+        <span class="ags-dot"></span>
+        <span class="ags-c"></span>
+        <span class="ags-ca"></span>
+        <span class="ags-n"></span>
+        <span class="cd-space"></span>
+        <span class="ags-d"></span>
+        <span class="ags-o"></span>
+      </span> 
+    </span>
+  </div>
+</div>
+<script src="//code.tidio.co/ushigqopw0jzdtuodnzsyo7zxfqy5ij0.js" async></script>
+</body>
+
+
+</html> 

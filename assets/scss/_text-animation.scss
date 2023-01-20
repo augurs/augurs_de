@@ -1,0 +1,87 @@
+
+$primary-color: #1e90ff ;
+$secondary-color: #ffe221;
+$tertiary-color: #ffffff;
+
+.product{
+  z-index: 2;
+  cursor: pointer;
+  .product-title{
+    pointer-events: none;
+    // font-size: 100px;
+    position:  absolute;
+    color: $white;
+    transition: all ease-in-out .3s;
+    transform:  translate(-300%,-100%)  scale(1);
+    opacity: 0;
+    animation: animateRight .3s ease-in 1s 1 normal forwards;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+  .title{
+    opacity: 0;
+  }
+}
+.services{
+  cursor: pointer;
+  z-index: 1;
+  .services-title{
+    pointer-events: none;
+    position:  absolute;
+    // font-size: 100px;
+    color: #000;
+    transition: all ease-in-out .3s;
+    transform:  translate(250%,130%) scale(1);
+    opacity: 0;
+    animation: animateLeft .3s ease-in 1.5s 1 normal forwards;
+  }
+}
+
+@keyframes animateRight{
+  from{
+    transform:  translate(-200%,-15vh);
+  }
+  to{
+    opacity: 1;
+    transform:  translate(-85%,-15vh) scale(1);
+  }
+}
+
+@keyframes animateLeft{
+  from{
+    transform:  translate(175%,15vh) scale(1);
+  }
+  to{
+    opacity: 1;
+    transform:  translate(100%,15vh) scale(1);
+  }
+}
+
+
+@media only screen and(max-width: 1024px){
+
+  @keyframes animateRight{
+    from{
+      transform:  translate(-200%,-15vh);
+    }
+    to{
+      position: absolute;
+      font-size: 50px;
+      opacity: 1;
+      transform:  translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes animateLeft{
+    from{
+      transform:  translate(175%,15vh) scale(1);
+    }
+    to{
+      position: absolute;
+      font-size: 50px;
+      opacity: 1;
+      transform:  translate(0 ,0) scale(1);
+    }
+  }
+  
+
+}

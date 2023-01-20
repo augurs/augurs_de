@@ -1,0 +1,137 @@
+
+.box {
+    &.icon-circle{
+        // background: $background;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 20px 50px $shadowColor;
+        border: 3px solid $boderColor1;
+        border-radius: 0px;
+    }
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: -100%;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(255, 255, 255, 0.1);
+	  transition: 0.5s;
+	  pointer-events: none;
+	}
+  
+	&:hover:before {
+	  left: -0%;
+	  transform: skewX(-0deg);
+	}
+  
+	.content {
+	  position: absolute;
+	  top: 15px;
+	  left: 15px;
+	  right: 15px;
+	  bottom: 15px;
+	  border: 1px solid #f0a591;
+	  padding: 20px;
+	  text-align: center;
+	  box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+	}
+  
+	span {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	  box-sizing: border-box;
+  
+	  &:nth-child(1) {
+		transform: rotate(0deg);
+	  }
+  
+	  &:nth-child(2) {
+		transform: rotate(90deg);
+	  }
+  
+	  &:nth-child(3) {
+		transform: rotate(180deg);
+	  }
+  
+	  &:nth-child(4) {
+		transform: rotate(270deg);
+	  }
+  
+	  &:before {
+		content: '';
+        position: absolute;
+        top:0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: $borderColor2;
+		// animation: animate 5s linear infinite;
+	  }
+	}
+	&:not(:nth-last-of-type(1)){
+		>span{
+			&:before{
+				animation: animate 5s linear reverse infinite;
+			}
+		}
+	}
+
+	&:nth-last-of-type(1){
+		>span{
+			&:before{
+				animation: animate-revert 5s linear reverse infinite;
+			}
+		}
+	}
+  }
+  
+  @keyframes animate {
+	0% {
+	  transform: scaleX(0);
+	  transform-origin: right;
+	}
+  
+	50% {
+	  transform: scaleX(1);
+	  transform-origin: right;
+	}
+  
+	50.1% {
+	  transform: scaleX(1);
+	  transform-origin: left;
+	}
+  
+	100% {
+	  transform: scaleX(0);
+	  transform-origin: left;
+	}
+  }
+
+
+    
+  @keyframes animate-revert {
+	0% {
+	  transform: scaleX(0);
+	  transform-origin: left;
+	}
+  
+	50% {
+	  transform: scaleX(1);
+	  transform-origin: left;
+	}
+  
+	50.1% {
+	  transform: scaleX(1);
+	  transform-origin: right;
+	}
+  
+	100% {
+	  transform: scaleX(0);
+	  transform-origin: right;
+	}
+  }
